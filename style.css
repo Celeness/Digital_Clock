@@ -1,0 +1,193 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+:root{
+  --black: #191919;
+  --blue: #b9cebb;
+  --pink1: rgba(242, 111, 125, 0.5);
+  --pink2:rgba(242, 111, 125, 0.7);
+  --blue2:rgba(71, 144, 150, 0.7);
+}
+body{
+    background-image: url(bcg_img.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+.container{
+  display: grid;
+  place-content: center;
+  text-align: center;
+  height: 100vh;
+}
+h1{
+  color:var(--black);
+  font-family: 'Poppins', sans-serif;
+  font-size: 35px;
+  letter-spacing: 4px;
+  margin: 0.5rem;
+}
+.parameters{
+  display: flex;
+  position: relative;
+}
+.block{
+  height: 12rem;
+  width: 12rem;
+  margin: 0.5rem;
+  position: relative;
+  background: var(--pink1);
+}
+.block h2{
+  color:var(--black);
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  letter-spacing: 3px;
+}
+.number{
+  width: 6rem;
+  height: auto;
+  font-size: 80px;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 2px;
+  position: absolute;
+  left: 2.5rem;
+  top:0.5rem
+}
+h3{
+  color: var(--blue);
+}
+.parameter{
+  height: 3rem;  
+  width: 12rem;
+  position: absolute;
+  bottom: 0px;
+  padding-top: 9px;
+  background: var(--pink2);
+}
+.am_pm{
+  position: absolute;
+  right: -100px;
+  bottom: 8px;
+  height:3rem;
+  width: 6rem;
+  padding-top: 6px;
+  background-color:var(--blue2);
+}
+.am_pm h2{
+  font-size: 24x;
+  color: var(--black);
+  font-family: 'Poppins', sans-serif;
+}
+/* 
+ Extra small devices (portrait phones, less than 576px)
+ No media query for `xs` since this is the default in Bootstrap
+  */
+  @media (max-width: 576px) {
+    body{
+      height: 100svh;
+    }
+    h1{
+      font-size: 25px;
+      letter-spacing: 3px;
+      margin: 0.3rem;
+    }
+    .parameters{
+      flex-direction: column;
+      align-items: center;
+    }
+    .am_pm{
+      right:-30px;
+      padding-top: 3px;
+      height:2rem;
+      width: 4rem;
+      background: rgba(71, 144, 150, 0.9) ;
+    }
+    .am_pm h2{
+      font-size: 16px;
+    }
+    .block{
+      height: 8rem;
+      width: 8rem;
+      margin: 0.5rem;
+      background: rgba(242, 111, 125, 0.7);
+    }
+    .block h2{
+      color:var(--black);
+      font-family: 'Poppins', sans-serif;
+      font-size: 14px;
+      letter-spacing: 2px;
+    }
+    .parameter{
+      height: 2rem;  
+      width: 8rem;
+      padding-top: 6px;
+      background: rgba(242, 111, 125, 0.9);
+    }
+    .number{
+      width: 8rem;
+      height: auto;
+      font-size: 50px;
+      left: 0.1rem;
+      top:0.5rem
+    }
+    h3{
+      color: #fafafa;
+      opacity: 0.8;
+    }
+    
+  }
+  /* Small devices (landscape phones, 576px and up) */
+  @media (min-width: 576px) and (max-width:768px) {
+    body{
+      height: 100svh;
+    }
+    h1{
+      font-size: 30px;
+      letter-spacing: 3px;
+      margin: 0.8rem;
+    }
+    .parameters{
+      flex-direction: column;
+      align-items: center;
+    }
+    .am_pm{
+      right:-40px;
+      padding-top: 2px;
+      height:2.5rem;
+      width: 5rem;
+      background: rgba(71, 144, 150, 0.9) ;
+    }
+    .am_pm h2{
+      font-size: 25px;
+    }
+    .block{
+      height: 10rem;
+      width: 10rem;
+      margin: 0.5rem;
+      background: rgba(242, 111, 125, 0.7);
+    }
+    .block h2{
+      font-size: 20px;
+      letter-spacing: 2px;
+    }
+    .parameter{
+      height: 2.5rem;  
+      width: 10rem;
+      padding-top: 5px;
+      background: rgba(242, 111, 125, 0.9);
+    }
+    .number{
+      width: 8rem;
+      height: auto;
+      font-size: 70px;
+      left: 1rem;
+      top:0.3rem
+    }
+    h3{
+      color: #fafafa;
+      opacity: 0.8;
+    }
+  }
