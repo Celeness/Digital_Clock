@@ -1,5 +1,5 @@
 getTime()
-let changedParamater = document.querySelector('.am_pm')
+// let changedParamater = document.querySelector('.am_pm')
 // changedParamater.innerHTML=`<h2>AM</h2>`
 function getTime() {
   //Get data of hours
@@ -10,7 +10,7 @@ function getTime() {
   }
   if (newHour >= 12) {
     newHour = newHour - 12
-    changedParamater.innerHTML = `<h2>PM</h2>`
+    // changedParamater.innerHTML = `<h2>PM</h2>`
   }
   hours.innerHTML = `<h3>${newHour}</h3>`
   //Get data of minutes
